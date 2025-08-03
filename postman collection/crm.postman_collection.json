@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "f45775e3-9577-476d-8229-9fa97c2535b2",
+		"name": "crm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44229762"
+	},
+	"item": [
+		{
+			"name": "getall customers",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create cusomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"asha1236\",\r\n\"email\":\"asha898256@gmail.com\",\r\n\"phone\":\"8593554158\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/createcustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"createcustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update cusomer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Pooja Sree\",\r\n        \"email\": \"\",\r\n        \"phone\": \"9876543210\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/updatecustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updatecustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletecustomer",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Pooja Sree\",\r\n        \"email\": \"\",\r\n        \"phone\": \"9876543210\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/deletecustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"deletecustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create case",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/createcase",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"createcase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatecase",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"title\":\"product not deliverd\",\r\n\"description\":\"customer wants to refund\",\r\n\"status\":\"resolved\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/updatecase",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"updatecase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"title\":\"product not deliverd\",\r\n\"description\":\"customer wants to refund\",\r\n\"status\":\"resolved\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/registeruser",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"registeruser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"title\":\"product not deliverd\",\r\n\"description\":\"customer wants to refund\",\r\n\"status\":\"resolved\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/registeruser",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"registeruser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
