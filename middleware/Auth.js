@@ -6,7 +6,7 @@ require('dotenv').config()
 
 const authmiddleware=async(req,res,next)=>{
     const token=req.header('Authorization')?.replace('Bearer ','')
-    if (!token)return res.status(STATUS.BAD_REQESTED).json({message:MESSAGES.ACCESS_DENIED})
+    if (!token)return res.status(STATUS.BAD_REQUEST).json({message:MESSAGES.ACCESS_DENIED})
 
     try{
         const decode=jwt.verify(token,process.env.TOKEN)

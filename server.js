@@ -3,11 +3,17 @@ const { connectDB } = require('./config/data')
 const app=express()
 const userroute=require('./routes/userroute')
 require('dotenv').config()
-const { authmiddleware } = require('./middleware/Auth')
+
+const cors=require('cors')
 
 
-app.use(express.json())
-app.use('/', authmiddleware, userroute)
+
+app.use(cors())
+app.use(express.json()) 
+app.use(express.urlencoded({ extended: true })) 
+
+
+app.use('/', userroute)
 
 
 

@@ -20,10 +20,7 @@ const customerschema=new mongoose.Schema({
     default: "active"
 },
 
-    assignedto:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'User'
-    },
+
     createdAt:{
         type:Date,
         default:Date.now
